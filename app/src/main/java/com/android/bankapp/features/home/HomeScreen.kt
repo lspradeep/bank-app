@@ -20,6 +20,7 @@ import coil.transform.CircleCropTransformation
 import com.android.bankapp.R
 import com.android.bankapp.data.models.RecentTransaction
 import com.android.bankapp.features.widgets.CreditCard
+import com.android.bankapp.features.widgets.CreditCard2
 import com.android.bankapp.features.widgets.ItemDatePicker
 import com.android.bankapp.features.widgets.ItemRecentTransaction
 import com.android.bankapp.ui.theme.CustomOutlinedButton
@@ -168,7 +169,7 @@ fun DisplayCards(modifier: Modifier) {
     ) {
         LazyRow(state = lazyListState) {
             items(items = cards) {
-                CreditCard(modifier = modifier)
+                CreditCard2(modifier = modifier)
                 Spacer(modifier = modifier.width(25.dp))
             }
         }
